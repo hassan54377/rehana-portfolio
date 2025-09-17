@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Rehana Batool</title>
+  <meta name="description" content="Portfolio showcase of Rehana Batool, freelance designer.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6;}
+    header {background:#222; color:#fff; padding:20px; text-align:center;}
+    header nav a {color:#fff; margin:0 10px; text-decoration:none;}
+    section {padding:40px 20px; max-width:1000px; margin:auto;}
+    h2 {text-align:center; margin-bottom:20px;}
+    .portfolio-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+    .portfolio-grid img {width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);}
+    footer {text-align:center; padding:20px; background:#222; color:#fff; margin-top:40px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rehana Batool</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="https://www.fiverr.com/s/42gbb7R" target="_blank">Hire Me (Fiverr)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div><img src="images/regalia.jpeg" alt="Regalia Logo"></div>
+        <div><img src="images/veridian.jpeg" alt="Veridian Royal Logo"></div>
+        <div><img src="images/flavor.jpeg" alt="Flavor Harbor Logo"></div>
+        <div><img src="images/apex.jpeg" alt="Apex Designs Logo"></div>
+        <div><img src="images/eco.jpeg" alt="Eco Life Logo"></div>
+        <div><img src="images/volt.jpeg" alt="Volt Studios Logo"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Rehana Batool — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
